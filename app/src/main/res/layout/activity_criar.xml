@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CriarActivity"
+    android:background="@color/cor_fundo"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/campoTituloCriar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/campo"
+        android:textCursorDrawable="@drawable/cursor"
+        android:padding="5dp"
+        android:hint="Title"
+        android:textSize="18dp"
+        android:textColorHint="#D3D3D3"
+        android:maxLength="40"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:orientation="horizontal"/>
+
+    <EditText
+        android:id="@+id/campoConteudoCriar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/campo"
+        android:textCursorDrawable="@drawable/cursor"
+        android:padding="5dp"
+        android:layout_weight="0.7"
+        android:hint="Content"
+        android:textSize="18dp"
+        android:textColorHint="#D3D3D3"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="inserir"
+            android:text="Save"
+            android:textSize="18dp"
+            android:background="@drawable/botao"
+            android:textColor="@color/cor_texto_botao"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</LinearLayout>
